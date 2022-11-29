@@ -80,7 +80,7 @@ class BookServiceTest @Autowired constructor(
             User("강준영", null)
         )
         userLoanHistoryRepository.save(
-            UserLoanHistory(savedUser, "이상한 나라의 엘리스", false)
+            UserLoanHistory(savedUser, "이상한 나라의 엘리스", false, null)
         )
         val request = BookLoanRequest("강준영", "이상한 나라의 엘리스")
 
@@ -99,7 +99,7 @@ class BookServiceTest @Autowired constructor(
             User("강준영", null)
         )
         userLoanHistoryRepository.save(
-            UserLoanHistory(savedUser, "이상한 나라의 엘리스", false)
+            UserLoanHistory(savedUser, "이상한 나라의 엘리스", false, null)
         )
         val request = BookReturnRequest("강준영", "이상한 나라의 엘리스")
 
